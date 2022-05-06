@@ -1,1 +1,21 @@
+#include <stdlib.h>
+#include <stdio.h>
 
+int main(){
+
+    int i, j, matriz1[2][3] = {1,2,3,4,5,6}, matriz2[2][3] = {10,21,30,11,24,54}, matriz3[2][3];
+
+    for(i = 0; i < 2; i++) {
+        for ( j = 0; j < 3; j++) {
+            matriz3[i][j] = matriz1[i][j] + matriz2[i][j];
+        }
+    }
+
+    for(i = 0; i < 2; i++) {
+        for(j = 0; j < 3; j++) {
+           printf("A soma das matrizes eh: %2d", matriz3[i][j]); 
+           printf("\n");
+        }
+    }
+    return 0;
+}
