@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int fat(int num){
+long long fat(int num){
     if(num == 0){
         return 1;
     }
@@ -14,7 +14,7 @@ int fat(int num){
 
 
 int main(){
-    int i, ini = 1, fim= 10;
+    int i, ini = 10, fim= 15;
     
     printf("-------- FATORIAL --------\n\n");
     for(i = ini; i <= fim; i++){
