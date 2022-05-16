@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int fat(int num){
+long long fat(int num){
     if(num == 0){
         return 1;
     }
