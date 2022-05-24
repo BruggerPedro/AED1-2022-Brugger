@@ -1,15 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct individuo
-{
+struct individuo{
   int codigo_genetico[10];    // valores binarios aleatorios
   float aptidao_abs;        // pontencial de cada individuo (0.0 <= aptidao <= 10.0)
   float aptidao_relativa;    // deve ser calculada em tempo de execuC'C#o...
 };
 
-struct populacao
-{
+struct populacao{
   struct individuo *pop;    // um vetor de N individuos
   int tamanho;            // tamanho N da populaC'C#o (N = 100)
 };
