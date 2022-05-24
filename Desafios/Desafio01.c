@@ -20,7 +20,7 @@ int main (){
     double sorteio, resultado = 0;
 
     printf ("Insira a quantidade de individuos: ");
-    scanf ("%d", &n);
+    scanf ("%d", &num);
 
     populacao p;
 
@@ -39,7 +39,8 @@ int main (){
     }
 
     for (i = 0; i < num; i++){
-        p.pop[i].aptidao_relativa = p.pop[i].aptidao_abs / soma;
+        p.pop[i].aptid
+        ao_relativa = p.pop[i].aptidao_abs / soma;
     }
 
     sorteio = ((double) rand ()) / ((double) RAND_MAX);
