@@ -39,8 +39,7 @@ int main (){
     }
 
     for (i = 0; i < num; i++){
-        p.pop[i].aptid
-        ao_relativa = p.pop[i].aptidao_abs / soma;
+        p.pop[i].aptidao_relativa = p.pop[i].aptidao_abs / soma;
     }
 
     sorteio = ((double) rand ()) / ((double) RAND_MAX);
@@ -50,8 +49,9 @@ int main (){
             if (p.pop[i].aptidao_relativa < sorteio){
                 resultado += p.pop[i].aptidao_relativa;
             }
+            printf ("O resultado do sorteio eh: %lf\n", resultado); //%lf para imprimir um double
         }
-        printf ("O resultado do sorteio eh: %lf\n", resultado); //%lf para imprimir um double
+        //printf ("O resultado do sorteio eh: %lf\n", resultado); //%lf para imprimir um double
     }
     return 0;
 }
