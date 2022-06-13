@@ -1,27 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "ponto.h"
 
-int main()
-{
-    Ponto *pto1, *pto2;
+#include "lista.h"
 
-    pto1 = gera_pto();
-    pto2 = gera_pto();
+int main(){
+    int vet[10] = {4, 8, -1, 19, 2, 7, 8, 5, 9, 22};
 
-    if (pto1 == NULL || pto2 == NULL)
-    {
-        printf("Não foi possivel criar os pontos");
-        return -1;
+    Lista *Lista;
+
+    Lista = create();
+    int i = 0;
+    while(i < 10){
+        push(vet[i], Lista);
+        i++;
     }
-
-    set_pto(pto1, 2, 3);
-    set_pto(pto2, 5, 6);
-
-    printf("A distancia entre os pontos eh: %0.2f", distancia_pto(pto1, pto2));
-
-    libera_pto(&pto1);
-    libera_pto(&pto2);
+    print(Lista);
 
     return 0;
 }
