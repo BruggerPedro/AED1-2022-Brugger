@@ -1,11 +1,11 @@
-#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-typedef struct ponto Ponto;
+typedef struct Lista Lista;
 
-Ponto *gera_pto();
-float set_pto(Ponto *pto, float N1, float N2);
-float get_pto(Ponto *pto, float *N1, float *N2);
-void libera_pto(Ponto **pto);
-float distancia_pto(Ponto *pto1, Ponto *pto2);
+Lista *create();
+int push(int value, Lista *lista);
+void print(Lista *lista);
+int pop(int value, Lista *lista);
+void free_lista(Lista *lista);
